@@ -11,6 +11,7 @@ const NavBar = () => {
     return (
         <>
             <div className="navbar fixed z-10 max-w-screen-xl bg-black text-white">
+
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden text-blue-600">
@@ -20,6 +21,7 @@ const NavBar = () => {
                             {navOptions}
                         </ul>
                     </div>
+                    
                     <a className="btn btn-ghost normal-case text-xl"> <span className='text-sky-500'>Sun<span className='text-purple-600'>shine</span></span> <span className='text-green-700'>Academy</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
