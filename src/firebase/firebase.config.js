@@ -5,13 +5,15 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBlnH-RAT82X8joQx3k3Y0YtmwZnbLrIpY",
-  authDomain: "sunshine-academy-9a286.firebaseapp.com",
-  projectId: "sunshine-academy-9a286",
-  storageBucket: "sunshine-academy-9a286.appspot.com",
-  messagingSenderId: "220967270198",
-  appId: "1:220967270198:web:fcd75f537926e8510da597"
+  apiKey: process.env.VITE_apiKey,
+  authDomain: process.env.VITE_authDomain,
+  projectId: process.env.VITE_projectId,
+  storageBucket: process.env.VITE_storageBucket,
+  messagingSenderId: process.env.VITE_messagingSenderId,
+  appId: process.env.VITE_appId
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export default app;
