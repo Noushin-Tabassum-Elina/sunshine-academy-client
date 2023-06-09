@@ -10,7 +10,7 @@ const NavBar = () => {
         </>
     return (
         <>
-            <div className="navbar fixed z-10 max-w-screen-xl bg-pink-400 text-black">
+            <div className="navbar fixed z-10 max-w-screen-xl bg-lime-600 text-white">
 
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -22,7 +22,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     
-                    <a className="btn btn-ghost normal-case text-xl"> <span className='text-orange-800'>Sun<span className='text-purple-800'>shine</span></span> <span className='text-green-700'>Academy</span></a>
+                    <a className="btn btn-ghost normal-case text-xl font-extrabold"> <span className='text-pink-800'>Sun<span className='text-white'>shine</span></span> <span className='text-rose-700'>Academy</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

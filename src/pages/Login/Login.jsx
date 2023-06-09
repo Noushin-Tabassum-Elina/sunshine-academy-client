@@ -39,16 +39,16 @@ const Login = () => {
         <title>Sunshine Academy | Login</title>
       </Helmet>
       <div
-        className="hero min-h-screen bg-pink-300 pt-10"
+        className="hero min-h-screen bg-orange-200 pt-10"
         style={{
           backgroundImage: "url('https://i.ibb.co/7N7f9fJ/boys-3350811-1280.webp')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="hero-content flex-col md:flex-row-reverse">
+        <div className="hero-content flex-col md:flex-row-reverse mt-10">
           <div className="card shadow-2xl bg-transparent bg-opacity-5">
-            <h3 className='text-2xl font-bold p-2 mt-6'>Login to <span className='text-sky-500'>Sun<span className='text-purple-600'>shine</span></span> <span className='text-green-700'>Academy</span></h3>
+            <h3 className='text-2xl font-extrabold p-2 mt-6 text-pink-800'><i>Login to SunShine Academy</i></h3>
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control ">
                 <label className="label">
