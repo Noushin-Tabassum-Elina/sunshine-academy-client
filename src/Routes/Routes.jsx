@@ -7,6 +7,7 @@ import Error from "../pages/Error/Error.jsx";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import Instructor from "../pages/Instructor/Instructor";
+import Classes from "../pages/Classes/Classes";
 
 
 
@@ -31,6 +32,14 @@ export const router = createBrowserRouter([
         {
           path: '/instructor',
           element: <Instructor></Instructor>
+        },
+        {
+          path:'/classes',
+          element: <Classes></Classes>
+        },
+        {
+          path:"",
+         
         }
         
       ]

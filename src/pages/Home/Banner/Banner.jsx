@@ -19,6 +19,7 @@ const Banner = () => {
                         <h2 data-aos="fade-right" className="text-6xl font-bold mb-5"><span className='text-purple-700'> Best <span className='text-blue-400'>Summer</span><span className='text-orange-600'> Camping</span></span> </h2>
                          <h2  data-aos="fade-left" className="text-6xl font-bold mb-5">
                     <span className='text-green-600'>for <span className='text-yellow-500'>your</span><span className='text-pink-600'> kid</span></span></h2>
+                    <h4 data-aos="zoom-in" className='text-5xl text-blue-900 font-bold mb-5'>Exclusive <span className='text-rose-700'>Art</span> <span className='text-amber-600'>Classes</span></h4>
                     <ul className="text-lg text-violet-700 font-semibold">
                             <li data-aos="fade-up" className="mb-2 flex items-center">
                                 <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
