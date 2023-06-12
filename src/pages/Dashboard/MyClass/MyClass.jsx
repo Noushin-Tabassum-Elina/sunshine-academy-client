@@ -21,6 +21,7 @@ const MyClass = () => {
     })
 
     return (
+
         <div>
             <Helmet>
                 <title>Sunshine Academy | My Classes</title>
@@ -33,6 +34,7 @@ const MyClass = () => {
                 <table className="table table-zebra">
                     {/* head */}
                     <thead>
+
                         <tr>
                             <th>#</th>
                             <th>Name</th>
@@ -44,6 +46,7 @@ const MyClass = () => {
                             <th className="text-center">Action</th>
                             <th>FeedBack</th>
                         </tr>
+                        
                     </thead>
                     <tbody>
 
