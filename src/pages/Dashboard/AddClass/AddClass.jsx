@@ -8,7 +8,9 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 const AddClass = () => {
 
     const [axiosSecure] = useAxiosSecure();
+
     const { user } = useContext(AuthContext);
+    
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         const newClass = {
