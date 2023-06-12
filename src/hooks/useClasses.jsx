@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import { useContext } from "react";
+
+import { useQuery } from "@tanstack/react-query";
+import { AuthContext } from "../providers/AuthProvider";
 
 const useClasses = () => {
-    const [classes, setClasses] = useState([]);
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/classes')
-            .then(res => res.json())
-            .then(data => 
-               { 
-                setClasses(data)
-                setLoading(false)
-            })
-    }, [])
-    return [classes, loading]
+    const { user, loading} = useContext(AuthContext);
+    
+
+    const {refetch, data : classes=[] } = useQuery({
+
+        queryKey: ['classes', user?.email],
+        queryFn: async ()=>{
+            const response = await fetch(`https://sunshine-academy-server.vercel.app/classes`);
+            return response.json();
+        },
+    })
+
+
+    return [classes, loading, refetch];
 };
 
 export default useClasses;

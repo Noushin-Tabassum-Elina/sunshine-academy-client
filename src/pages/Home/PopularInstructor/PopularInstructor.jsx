@@ -1,5 +1,5 @@
 import React from 'react';
-import useInstructor from '../../../hooks/useInstructor';
+import useInstructor from '../../../hooks/useTeacher';
 import 'animate.css';
 
 const PopularInstructor = () => {
@@ -7,7 +7,7 @@ const PopularInstructor = () => {
     
     return (
         <div className='my-10'>
-             <h2 className=' text-4xl text-center font-bold p-5 font-serif text-green-600'><i>Our Instructors</i></h2>
+             <h2 className=' text-4xl text-center font-bold p-5 font-serif text-red-600'><i>Our Instructors</i></h2>
              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate__animated animate__fadeInUp ">
             {instructors.slice(0, 6).map((instructor, index) => (
                 <div key={index} className="card w-96 bg-slate-500 shadow-xl text-white">

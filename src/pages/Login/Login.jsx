@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { AuthContext } from '../../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import GoogleLogin from '../Shared/GoogleLogin/GoogleLogin';
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -16,6 +17,8 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+
+    
     signIn(email, password)
       .then(result => {
         const user = result.user;
@@ -65,7 +68,7 @@ const Login = () => {
                   <a href="#" className="label-text-alt link link-hover text-pink-900">Forgot password?</a>
                 </label>
               </div>
-    
+
               <div className="form-control mt-6">
                 <input disabled={false} className="btn text-white hover:bg-pink-500 bg-pink-800" type="submit" value="Login" />
               </div>
@@ -73,9 +76,11 @@ const Login = () => {
             <p className='p-4 text-center text-pink-800'>
               <small>New Here? <Link to="/signup">Create an account</Link></small>
             </p>
+            <p><GoogleLogin></GoogleLogin></p>
           </div>
         </div>
       </div>
+
     </>
   );
 };
