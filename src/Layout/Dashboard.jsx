@@ -17,7 +17,8 @@ const Dashboard = () => {
 
     const [isAdmin] = useAdmin();
     const [isInstructor] = useInstructor();
-    console.log(isAdmin)
+    // console.log(isAdmin)
+
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -27,6 +28,7 @@ const Dashboard = () => {
                 <Outlet></Outlet>
 
             </div>
+            
             <div className="drawer-side ">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-60 h-full bg-pink-200 text-pink-800">
