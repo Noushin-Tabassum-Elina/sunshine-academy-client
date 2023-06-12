@@ -72,6 +72,7 @@ const CheckoutForm = ({ cls, price }) => {
         );
 
         if (confirmError) {
+            
             console.log(confirmError);
         }
 
@@ -93,6 +94,7 @@ const CheckoutForm = ({ cls, price }) => {
             }
 
             axiosSecure.post('/payments', payment)
+
                 .then(res => {
                     if (res.data.insertedResult.insertedId && res.data.deleteResult.deletedCount > 0 && res.data.updateResult.modifiedCount > 0) {
                         Swal.fire({
