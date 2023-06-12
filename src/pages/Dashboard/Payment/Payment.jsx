@@ -12,7 +12,9 @@ const Payment = () => {
     
     
     return (
+        
         <div>
+
             <Helmet>
                 <title>Sunshine Academy | Payment</title>
             </Helmet>
