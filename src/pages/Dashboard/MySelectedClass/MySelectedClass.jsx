@@ -40,10 +40,13 @@ const MySelectedClass = () => {
     }
 
     return (
+
         <div>
+
             <Helmet>
                 <title>Sunshine Academy | My Selected Class</title>
             </Helmet>
+            
             <h2 className="text-4xl text-blue-400 font-bold my-5 text-center"><span className="text-orange-600"> Your</span> <span className="text-violet-600">Selected</span> Classes</h2>
 
             <div className="overflow-x-auto w-full mt-10 mx-auto">
