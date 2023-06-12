@@ -44,6 +44,7 @@ const ManageClasses = () => {
 
 
     return (
+        
         <div className="w-full">
 
             <Helmet>
