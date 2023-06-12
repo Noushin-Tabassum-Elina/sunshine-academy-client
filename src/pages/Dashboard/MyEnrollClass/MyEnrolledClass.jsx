@@ -7,7 +7,9 @@ const MyEnrolledClass = () => {
     const [enrolledClasses] = useEnrolledClass();
 
     return (
+
         <div>
+            
             <Helmet>
                 <title>Sunshine Academy | My Enrolled Class</title>
             </Helmet>
