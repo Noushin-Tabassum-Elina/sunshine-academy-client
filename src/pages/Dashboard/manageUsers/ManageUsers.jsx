@@ -50,9 +50,11 @@ const ManageUsers = () => {
 
     return (
         <div className="w-full">
+
             <Helmet>
                 <title>Sunshine Academy | Manage Users</title>
             </Helmet>
+            
             <h2 className="text-4xl font-bold my-5 text-center"> <span className="text-purple-700">Mange <span className="text-blue-400">All</span><span className="text-orange-600"> Users</span></span></h2>
             <hr />
 
